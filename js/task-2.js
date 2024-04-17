@@ -1,5 +1,9 @@
-function makeTransaction(quantity, pricePerDroid) {
+function getShippingMessage(country, price, deliveryFee) {
   console.log(
-    `You ordered ${quantity} droids worth ${quantity * pricePerDroid} credits!`
+    `Shipping to ${country} will cost ${price + deliveryFee} credits`
   );
 }
+
+// getShippingMessage("Australia", 120, 50);
+// getShippingMessage("Germany", 80, 20);
+// getShippingMessage("Sweden", 100, 20);
